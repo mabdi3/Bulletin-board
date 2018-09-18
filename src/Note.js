@@ -15,7 +15,7 @@ class Note extends Component {
     }
 
     remove() {
-        alert('removing note')
+        alert('removing')
     }
 
     render() {
