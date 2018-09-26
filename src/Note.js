@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import { FaPencilAlt } from 'react-icons/fa'
 import { FaTrashAlt } from 'react-icons/fa'
 import { FaSave } from 'react-icons/fa'
+import Draggable from 'react-draggable'; // The default
 
 
 class Note extends Component {
@@ -66,6 +67,7 @@ class Note extends Component {
 
     renderForm() {
         return (
+            <Draggable>
             <div className="note" style={this.style}>
                 <form onSubmit={this.save}>
                     <textarea ref={input => this._newText = input}
@@ -73,11 +75,13 @@ class Note extends Component {
                     <button id="save"><FaSave /></button>
                 </form>
             </div>
+            </Draggable>
         )
     }
 
     renderDisplay() {
         return (
+            <Draggable>
             <div className="note" style={this.style}>
                 <p>{this.props.children}</p>
                 <span>
@@ -85,6 +89,7 @@ class Note extends Component {
                     <button onClick={this.remove} id="remove"><FaTrashAlt /></button>
                 </span>
             </div>
+            </Draggable>
         )
     }
     render() {
