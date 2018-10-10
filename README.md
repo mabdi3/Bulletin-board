@@ -1,3 +1,9 @@
+## Bulletin Board
+
+![image](https://user-images.githubusercontent.com/31773257/46739875-80414f00-cc6f-11e8-8de6-9eca58389fc7.png)
+
+
+
 ## Starting up
 
 These instructions will get you a copy of the project up and running on your local system
